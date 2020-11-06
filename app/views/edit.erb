@@ -1,6 +1,6 @@
 <form action='/books/<%= @book.id %>' method='POST'>
-<p><label for='article[title]'>Title:</label><input type='text' name='article[title]' value='<%= @article.title %>'></p>
-Author: <input type=”text” name=”book[author]” value=”<%= @book.author %>”><br>
-<input type=”hidden” name=”_method” value=”PATCH”>
-<input type=”submit”/>
+<p><label for='article[title]'>Title:</label><input type='text' name='article[title]' id='article[title]' value='<%= @article.title %>'></p>
+<p><label for='article[content]'>Content:</label><input type='text' name='article[content]' value='<%= @article.content %>' id='article[content]'></p>
+<input type='hidden' name='_method' value='PATCH'>
+<input type='submit'/>
 </form>
