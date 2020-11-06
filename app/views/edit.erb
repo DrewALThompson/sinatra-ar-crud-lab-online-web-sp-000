@@ -1,4 +1,6 @@
-<form action="/articles/<%= @article.id %>" method="post">
-    <input id="hidden" type="hidden" name="_method" value="patch">
-    
+<form action='/books/<%= @book.id %>' method='POST'>
+Title: <input type=”text” name=”book[title]” value=”<%= @book.title %>”><br>
+Author: <input type=”text” name=”book[author]” value=”<%= @book.author %>”><br>
+<input type=”hidden” name=”_method” value=”PATCH”>
+<input type=”submit”/>
 </form>
